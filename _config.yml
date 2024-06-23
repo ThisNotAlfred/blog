@@ -31,6 +31,10 @@ google_fonts:
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
+linkedin:
+  url: https://www.linkedin.com/in/mohammadalitalebi/
+github:
+  url: https://www.github.com/ThisnNtAlfred/
 
 # Liquid
 liquid:
