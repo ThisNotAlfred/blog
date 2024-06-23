@@ -21,6 +21,7 @@ title: "NotAlfred Blog"
 description: "Programmer Shenanigans"
 baseurl: "/blog"
 url: "https://thisnotalfred.github.io"
+repository: ThisNotAlfred/blog
 logo: # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true
@@ -31,6 +32,10 @@ google_fonts:
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
+linkedin:
+  url: https://www.linkedin.com/in/mohammadalitalebi/
+github:
+  url: https://www.github.com/ThisNotAlfred/
 
 # Liquid
 liquid:
