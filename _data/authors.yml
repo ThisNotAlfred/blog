@@ -2,11 +2,11 @@
 # Remove file or replace with your own
 
 Mohammad Ali Talebi:
-  name: Mohammad Ali Talebi
-  links:
-    - title: linkedin
-      url: https://www.linkedin.com/in/mohammadalitalebi
-      icon: fab fa-linkedin-square
-    - title: github
-      url: https://www.github.com/ThisNotAlfred
-      icon: fab fa-github-square
+ name: Mohammad Ali Talebi
+ links:
+  - title: linkedin
+   url: https://www.linkedin.com/in/mohammadalitalebi
+   icon: fab fa-linkedin-square
+  - title: github
+   url: https://www.github.com/ThisNotAlfred
+   icon: fab fa-github-square
