@@ -1,2 +1,1 @@
-# notalfred.github.io
-personal blog
+a personal blog.
