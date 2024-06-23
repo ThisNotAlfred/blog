@@ -5,6 +5,7 @@ url:                 https://thisnotalfred.github.io/blog/
 baseurl:             ''
 paginate:            5
 permalink:           pretty
+repository:          ThisNotAlfred/blog
 
 # Gems
 plugins:
