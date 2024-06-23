@@ -2,7 +2,7 @@
 title:               NotAlfred 
 tagline:             'Human Shenanigans'
 url:                 'https://thisnotalfred.github.io/blog/'
-baseurl:             'https://thisnotalfred.github.io/'
+baseurl:             'https://thisnotalfred.github.io/blog/'
 paginate:            5
 permalink:           pretty
 repository:          ThisNotAlfred/blog
