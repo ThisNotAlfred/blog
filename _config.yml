@@ -18,7 +18,7 @@ remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/dark.css"
 locale: en-US, fa-IR
 title: "NotAlfred Blog"
-description: "It really is the best."
+description: "Programmer Shenanigans"
 baseurl: "/blog"
 url: "https://thisnotalfred.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
