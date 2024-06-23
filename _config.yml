@@ -4,7 +4,7 @@ tagline: shenanigan of a human
 url: https://notalfred.github.io/
 paginate: 1
 baseurl: ""
-permalink: pretty
+repository: ThisNotAlfred/notalfred.github.io
 
 # Gems
 plugins:
@@ -37,7 +37,6 @@ author:
   name: Mohammad Ali Talebi
   url: https://www.linkedin.com/in/mohammadalitalebi/
 
-repository: https://github.com/ThisNotAlfred/notalfred.github.io.git
 
 # Custom vars
 version: 3.0.0
