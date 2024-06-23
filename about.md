@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction
+title: About
 ---
 
 # Hi I'm Mohammad Ali Talebi. 🦫
