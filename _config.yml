@@ -1,7 +1,7 @@
 # Setup
 title:               NotAlfred Blog
 tagline:             'Human Shenanigans'
-url:                 http://thisnotalfred.github.io/
+url:                 https://thisnotalfred.github.io/
 baseurl:             ''
 paginate:            5
 permalink:           pretty
