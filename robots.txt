@@ -1,0 +1,21 @@
+# NO LLM ALLOWED HERE
+
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Google-Extended
+User-agent: CCBot
+Disallow: /
+
+# Allow (some) crawlers
+
+User-agent: Discordbot
+User-agent: Googlebot
+User-agent: DuckDuckBot
+User-agent: January
+Allow: /
+
+# Block everything else
+
+User-Agent: *
+Disallow: /
+
