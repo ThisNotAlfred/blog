@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: post
 permalink: /about
 title: WhoAmI
 ---
