@@ -87,18 +87,24 @@ defaults:
       share: true
 
 # Site Author
-author:
-  name:
-  picture:
-  email:
-  twitter:
+Mohammad Ali Talebi:
+  name: Mohammad Ali Talebi
   links:
-    - title:
-      url:
-      icon:
+    - title: linkedin
+      url: https://www.linkedin.com/in/mohammadalitalebi
+      icon: fab fa-linkedin-square
+    - title: github
+      url: https://www.github.com/ThisNotAlfred
+      icon: fab fa-github-square
 
 # Footer Links
 footer_links:
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/mohammadalitalebi/
+    icon: fab fa-linkedin-square
+  - title: GitHub
+    url: https://www.github.com/ThisNotAlfred/
+    icon: fab fa-github-square
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
