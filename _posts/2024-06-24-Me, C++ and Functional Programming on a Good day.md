@@ -8,9 +8,6 @@ tags:
 last_modified_at: 2024-06-24
 ---
 
-Hi!
-
-
 I was procrastinating as always in my free time when I suddenly felt this big empty hole inside me about functional programming and C++. So I decided to write this blog post to delve deep into the topic. Of course I’m joking. I always wanted to write such a blog post. I just didn’t have the courage. Anyways let’s get into it.
 
 
