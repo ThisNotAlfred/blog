@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: about
+permalink: /about
 title: WhoAmI
 ---
 
