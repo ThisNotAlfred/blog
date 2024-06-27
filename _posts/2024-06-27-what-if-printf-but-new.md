@@ -26,7 +26,7 @@ parse_number(Arg arg)
 
 template <typename Arg, typename... Args>
 auto
-r_printf(const std::string_view format, const Arg& arg, const Args&... args)
+r_printf(std::string& buffer, const std::string& format, const Arg& arg, const Args&... args)
 {
 }
 
@@ -34,16 +34,16 @@ namespace modern
 {
 template <typename... Args>
 constexpr auto
-printf(const std::string_view format, const Args&... args) -> void
+printf(const std::string& format, const Args&... args) -> void
 {
 }
 ```
 
-I don’t think that I needed to use namespaces here, but I did anyway. `printf` is our main function. It’s the one that we’re going to use. `r_printf` is used for taking variadic arguments. We can see that later.
+I don’t think that I needed to use namespaces here, but I did anyway. but it's always good to use namespaces, since it aviods name clashing with other libraries.
 
-First let’s check something
+`printf` is our main function. It’s the one that we’re going to use. `r_printf` is used for taking variadic arguments. We can see that later.
 
-Let’s assume out functions calls are something like below:
+First let’s check something. Let’s assume out functions calls are something like below:
 
 ```c++
     modern::printf(“{}, {}!”, “hello”, “world”);
