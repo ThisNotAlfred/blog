@@ -1,5 +1,5 @@
 ---
-title: "Waht if `printf`, But new?"
+title: "What if `printf`, But new?"
 author: Mohammad Ali Talebi
 categories:
   - Programming
