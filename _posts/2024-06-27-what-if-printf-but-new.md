@@ -1,13 +1,9 @@
 ---
 title: "Waht if `printf`, But new?"
-categories:
-  - Programming
-tags:
-  - C++
+author: Mohammad Ali Talebi
 last_modified_at: 2024-06-27
 ---
 
-# What if `printf`, But new?
 Printfs is one of those functions that we might use in C programming everyday. What if we could take advantage of new C++ features and write a new and polished `printf`?
 
 ## What do we need?
