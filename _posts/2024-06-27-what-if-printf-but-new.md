@@ -144,7 +144,7 @@ r_printf(std::string& buffer, const std::string& format, const Arg& arg, const A
 }
 ```
 
-We’re using `std::is_same`. One of the very new things of modern C++ that lets us find out about type arguments during compile-time. In `parse_number` I used concepts for redundancy. I don’t think it was necessary. 
+We’re using `std::is_arithmatic`. One of the new things of modern C++ which lets us find out about type arguments during compile-time. In `parse_number` I used concepts for redundancy. I don’t think it was necessary. 
 
 Now with all of this together we can hope it works as intended!
 
