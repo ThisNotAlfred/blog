@@ -7,7 +7,7 @@ First we have to get the string from the user then parse at and put the argument
 ## The scaffolding
 Our scaffolding is something like this.
 
-```C++
+```c++
 template <typename Arg>
     requires std::integral<Arg>
 inline constexpr auto
@@ -44,7 +44,7 @@ We should basically parse for curly brackets and replace them in the string for 
 
 We first make sure that we have the right amount of arguments, count the curly pairs for the arguments. The code is simple and fairly understandable. The code is below.
 
-```C++
+```c++
 {
     auto number_of_placeholders = 0;
 
@@ -79,14 +79,15 @@ We first make sure that we have the right amount of arguments, count the curly p
 ## Now we do a bit of stripping
 The plan is to add an argument container to `r_printf`. This way we can take one variadic argument every time, then pass the rest of variadic arguments to the `r_printf`. hence the `r_` prefix. It’s recursive. This way we don’t need to count or do anything else. Each time we do this, we strip that part that we have printed. And throw it away.
 
-```C++
+```c++
     uint placeholder_loc = format.find('{');
     buffer.append(format.data(), placeholder_loc);
     std::string new_format = format.substr(placeholder_loc + 2, format.size());
 ```
 
 And at the end we make sure we either have at least one argument left or just append rest of our format to output and move away.
-```C++
+
+```c++
     if constexpr (sizeof...(args) != 0) {
         r_printf(buffer, new_format, args...);
     } else {
@@ -100,7 +101,7 @@ Sorry but no parsing in this article. I’m too lazy to write a parser from scra
 
 The code would end up looking something like this in the end.
 
-```C++
+```c++
 template <typename Arg>
     requires std::integral<Arg>
 inline constexpr auto
@@ -143,12 +144,14 @@ Now with all of this together we can hope it works as intended!
 
 ## Benchmark results
 This is the benchmark results.
-```
+
+```markdown
 new printf took: 0.372077s for 10000 iterations
 old printf took: 0.34962s for 10000 iterations
 std23 print took: 0.360844s for 10000 iterations
 linux write syscall took: 0.336617s for 10000 iterations
 ```
+
 As you can see, printf and write win by far. Even though I expected `write` syscall be the fastest by a large margin, I guess flushing every time and also compiler optimizations on libc gives printf a huge advantage. Then comes iso std23 print. To be honest I didn’t expect to beat it. But we’re close and that’s good.
 
 ## Wrap up
