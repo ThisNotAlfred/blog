@@ -129,14 +129,11 @@ r_printf(std::string& buffer, const std::string& format, const Arg& arg, const A
     std::string new_format = format.substr(placeholder_loc + 2, format.size());
 
     std::string new_arg = {};
-    if constexpr (std::is_same<int, Arg>() || std::is_same<uint, Arg>() ||
-                  std::is_same<double, Arg>() || std::is_same<float, Arg>() ||
-                  std::is_same<long, Arg>() || std::is_same<ulong, Arg>()) {
+    if constexpr (std::is_arithmetic<Arg>()) {
         new_arg = parse_number(arg);
     } else {
         new_arg = arg;
     }
-
     buffer.append(new_arg);
 
     if constexpr (sizeof...(args) != 0) {
