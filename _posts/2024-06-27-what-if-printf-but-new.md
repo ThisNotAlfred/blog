@@ -1,6 +1,10 @@
 ---
 title: "Waht if `printf`, But new?"
 author: Mohammad Ali Talebi
+categories:
+  - Programming
+tags:
+ - C++
 last_modified_at: 2024-06-27
 ---
 
