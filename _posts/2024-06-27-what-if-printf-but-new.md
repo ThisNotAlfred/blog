@@ -144,7 +144,7 @@ r_printf(std::string& buffer, const std::string& format, const Arg& arg, const A
 }
 ```
 
-We’re using `std::is_arithmatic`. One of the new things of modern C++ which lets us find out about type arguments during compile-time. In `parse_number` I used concepts for redundancy. I don’t think it was necessary. 
+We’re using `std::is_arithmetic`. One of the new things of modern C++ which lets us find out about type arguments during compile-time. In `parse_number` I used concepts for redundancy. I don’t think it was necessary. 
 
 Now with all of this together we can hope it works as intended!
 
@@ -158,7 +158,7 @@ std23 print took: 0.360844s for 10000 iterations
 linux write syscall took: 0.336617s for 10000 iterations
 ```
 
-As you can see, printf and write win by far. Even though I expected `write` syscall be the fastest by a large margin, I guess flushing every time and also compiler optimizations on libc gives printf a huge advantage. Then comes iso std23 print. To be honest I didn’t expect to beat it. But we’re close and that’s good.
+As you can see, libc `printf` and `write` win by far. Even though I expected `write` syscall be the fastest by a large margin, I guess flushing every time and also compiler optimizations on libc gives printf a huge advantage. Then comes iso std23 print. To be honest I didn’t expect to beat it. But we’re close and that’s good.
 
 ## Wrap up
 Thank you for reading this article. If you have any suggestion or found any bug in the code, please open an issue on github. I’ll be grateful to respond. Have a great night or day at whatever time you’re reading this.
